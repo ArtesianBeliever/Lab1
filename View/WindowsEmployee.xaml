@@ -7,6 +7,16 @@
  mc:Ignorable="d"
  Title="Сотрудники" Height="300" Width="500">
     <StackPanel>
+        <StackPanel Orientation="Horizontal" Background="#FFE4E0E0">
+            <Button x:Name="btnAdd" Margin="10,10,5,10" Content="Добавить"
+ Height="25"
+ Click="btnAdd_Click"/>
+            <Button x:Name="btnEdit" Margin="10,10,5,10" Content="Редактировать"
+ Height="25" Click="btnEdit_Click"/>
+            <Button x:Name="btnDelete" Margin="10,10,5,10" Content="Удалить"
+Height="25"
+ Click="btnDelete_Click"/>
+        </StackPanel>
         <ListView x:Name="lvEmployee">
             <ListView.View>
                 <GridView>

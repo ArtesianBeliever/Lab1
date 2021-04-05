@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Lab1.View;
+using Lab1.ViewModel;
+using Lab1.Model;
 
 namespace Lab1
 {
@@ -36,5 +38,6 @@ namespace Lab1
             wRole.Show();
         }
         public static int IdRole { get; set; }
+        public static int IdEmployee { get; set; }
     }
     }
