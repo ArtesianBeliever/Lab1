@@ -12,6 +12,7 @@ namespace Lab1.ViewModel
     {
         public ObservableCollection<Role> ListRole { get; set; } = new ObservableCollection<Role>();
         public RoleViewModel()
+
  {
  this.ListRole.Add(new Role
  {
@@ -29,5 +30,18 @@ this.ListRole.Add(new Role
     NameRole = "Менеджер"
 });
  }
+        public int MaxId()
+        {
+            int max = 0;
+            foreach (var r in this.ListRole)
+            {
+                if (max < r.Id)
+                {
+                    max = r.Id;
+                };
+            }
+            return max;
+        }
+
     }
 }

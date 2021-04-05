@@ -16,6 +16,10 @@ namespace Lab1.Model
             this.Id = id;
             this.NameRole = nameRole;
         }
+        public Role ShallowCopy()
+        {
+            return (Role)this.MemberwiseClone();
+        }
 
     }
 }

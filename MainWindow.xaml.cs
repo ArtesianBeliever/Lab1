@@ -35,5 +35,6 @@ namespace Lab1
             WindowsRole wRole = new WindowsRole();
             wRole.Show();
         }
-        }
+        public static int IdRole { get; set; }
+    }
     }
